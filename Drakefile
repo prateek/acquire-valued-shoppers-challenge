@@ -1,0 +1,8 @@
+; base data directory
+BASE=data
+
+; retrieve raw-data
+offers.csv <-
+  wget -O $OUTPUT.gz https://www.kaggle.com/c/acquire-valued-shoppers-challenge/download/offers.csv.gz
+  unzip $OUTPUT.gz
+  rm -f $OUTPUT.gz
